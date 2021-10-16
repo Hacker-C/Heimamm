@@ -3,6 +3,7 @@ body {
   max-width: 750px;
   margin: 0 auto;
   height: 1200px;
+  background-color: #F2F4F7;
 }
 a {
   text-decoration: none;
@@ -12,6 +13,10 @@ a {
   html {
     font-size: 37.5px !important;
   }
+}
+.wrap {
+  background-color: #fff;
+  padding-bottom: 1.146667rem;
 }
 .header {
   height: 2.133333rem;
