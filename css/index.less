@@ -2,7 +2,7 @@ body {
     min-width: 320px;
     max-width: 750px;
     margin: 0 auto;
-    height: 1200px;
+    height: 2200px;
     background-color: #F2F4F7;
 }
 a {
@@ -100,8 +100,6 @@ a {
         display: -webkit-box;
         display: -ms-flexbox;
         display: -webkit-flex;
-        display: flex;
-        flex-direction: column;
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         -webkit-justify-content: center;
@@ -110,7 +108,10 @@ a {
         -ms-flex-align: center;
         -webkit-align-items: center;
         align-items: center;
+        display: flex;
+        flex-direction: column;
         transition: 300ms;
+        // 其余兄弟缩放0.8
         transform: scale(0.8);
         opacity: 0.4;
         a {
@@ -144,4 +145,32 @@ a {
             color: #333;
         }
     }
+}
+
+// 学习模块轮播图
+.study {
+    .study_fo {
+        padding: .266667rem;
+    }
+    .swiper-slide {
+        font-size: 18px;
+        background: #fff;
+        width: 7.733333rem;
+        height: 9.066667rem;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0px 10px rgba(0, 0, 0, .1);
+        h5 {
+            font-size: .746667rem;
+            margin: .533333rem 0;
+            font-weight: 400;
+            padding: 0 .266667rem;
+        }
+        p {
+            font-size: .693333rem;
+            span {
+                color: #FF4400;
+            }
+        }
+      }
 }

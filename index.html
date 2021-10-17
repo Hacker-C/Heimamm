@@ -49,8 +49,9 @@
         <section class="go">
             <img src="./images/go.png" alt="">
         </section>
+
     </section>
-    <!-- 就指导 -->
+    <!-- 就业指导 -->
     <section class="content">
         <!-- 头部 -->
         <div class="con-hd">
@@ -62,7 +63,7 @@
         </div>
         <div class="get_job_focus">
             <!-- Swiper -->
-            <div class="swiper-container">
+            <div class="swiper-container get_job_fo">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <a href=""><img src="./images/pic.png" alt=""></a>
@@ -86,6 +87,54 @@
         </div>
     </section>
 
+    <!-- 充电学习 -->
+    <section class="content">
+        <!-- 头部 -->
+        <div class="con-hd">
+            <h4>
+                <span class="icon"><img src="./icons/i2.png" alt=""></span>
+                充电学习
+            </h4>
+            <a href="#" class="more">更多>></a>
+        </div>
+        <!-- 学习模块轮播图 -->
+        <div class="study">
+            <!-- Swiper -->
+            <div class="swiper-container study_fo">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./images/pic1.png" alt="">
+                        <h5>说地道英语，告别中式英语</h5>
+                        <p><span class="red">156</span>人学习</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/pic1.png" alt="">
+                        <h5>说地道英语，告别中式英语</h5>
+                        <p><span class="red">156</span>人学习</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/pic1.png" alt="">
+                        <h5>说地道英语，告别中式英语</h5>
+                        <p><span class="red">156</span>人学习</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/pic1.png" alt="">
+                        <h5>说地道英语，告别中式英语</h5>
+                        <p><span class="red">156</span>人学习</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/pic1.png" alt="">
+                        <h5>说地道英语，告别中式英语</h5>
+                        <p><span class="red">156</span>人学习</p>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+    </section>
+
 
     <script src="./js/flexible.js"></script>
     <script src="./js/swiper.min.js"></script>
@@ -93,7 +142,7 @@
     <script>
         // 第一个函数，就业指导轮播图
         (function () {
-            var swiper = new Swiper('.swiper-container', {
+            var swiper = new Swiper('.get_job_fo', {
                 // 当前视窗显示的图片数
                 slidesPerView: 2,
                 // 盒子之间的距离
@@ -107,7 +156,14 @@
                 },
             });
         })();
-
+        // 第二个函数轮播图
+        (function () {
+            // 多个轮播图，这个实例化类名最好修改
+            var swiper = new Swiper('.study_fo', {
+                slidesPerView: 2.5,
+                spaceBetween: 20
+            });
+        })()
     </script>
 </body>
 
