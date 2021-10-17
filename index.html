@@ -9,6 +9,8 @@
     <!-- 初始化 -->
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/index.css ">
+    <!-- swiper库 -->
+    <link rel="stylesheet" href="./css/swiper.min.css">
 </head>
 
 <body>
@@ -50,19 +52,63 @@
     </section>
     <!-- 就指导 -->
     <section class="content">
+        <!-- 头部 -->
         <div class="con-hd">
             <h4>
                 <span class="icon"><img src="./icons/i2.png" alt=""></span>
                 就业指导
             </h4>
-            <a href="#" class="more">更多>>></a>
+            <a href="#" class="more">更多>></a>
         </div>
+        <div class="get_job_focus">
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href=""><img src="./images/pic.png" alt=""></a>
+                        <p>老师教你应对面试技巧</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href=""><img src="./images/ldh.jpg" alt=""></a>
+                        <p>老师教你应对面试技巧</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href=""><img src="./images/3.jpg" alt=""></a>
+                        <p>老师教你应对面试技巧</p>
+                    </div>
 
+                </div>
+
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
     </section>
 
 
     <script src="./js/flexible.js"></script>
     <script src="./js/swiper.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        // 第一个函数，就业指导轮播图
+        (function () {
+            var swiper = new Swiper('.swiper-container', {
+                // 当前视窗显示的图片数
+                slidesPerView: 2,
+                // 盒子之间的距离
+                spaceBetween: 30,
+                centeredSlides: true,
+                loop: true,
+                // 左右箭头
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        })();
+
+    </script>
 </body>
 
 </html>
